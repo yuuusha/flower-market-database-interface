@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info:
+  title: Database Interface for Flower Market
+  description: "Интерфейс базы данных для цветочного магазина"
+  version: 0.0.1
+servers:
+  - url: https://sandi.love/
+tags:
+  - name: client
+    description: Работа с клиентами
+paths:
+  /client:
+    get:
+      tags:
+        - client
+      summary: Получить список всех клиентов
+      responses:
+        "200":
+          description: Список клиентов получен успешно
